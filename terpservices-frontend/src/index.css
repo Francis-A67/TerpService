@@ -1,0 +1,103 @@
+/* Global reset - removes default browser spacing on all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the whole app */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ---- NAVBAR ---- */
+
+/* Main navbar container */
+/* display: flex - puts logo and links side by side */
+/* justify-content: space-between - pushes logo left and links right */
+/* align-items: center - vertically centers everything */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cc0000;
+  padding: 16px 32px;
+}
+
+/* App name/logo on the left side of navbar */
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Container for the nav links on the right */
+/* gap: 24px - adds space between each link */
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+/* Individual nav link styling */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Underline a link when you hover over it */
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---- HOME PAGE ---- */
+
+/* Main home page container - adds breathing room around content */
+.home-page {
+  padding: 32px;
+}
+
+/* Page heading styling */
+.home-page h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Grid layout for listing cards */
+/* grid-template-columns: repeat(3, 1fr) - creates 3 equal columns */
+/* gap: 24px - adds space between each card */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ---- LISTING CARD ---- */
+
+/* Individual card styling */
+/* border-radius - rounds the corners */
+/* box-shadow - adds a subtle shadow underneath */
+.listing-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title - Maryland red to match the navbar */
+.listing-card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #cc0000;
+}
+
+/* Card detail text - slightly smaller and grey */
+.listing-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
